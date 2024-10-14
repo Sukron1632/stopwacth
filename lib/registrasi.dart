@@ -76,7 +76,7 @@ class _RegistrasiState extends State<Registrasi> {
             const SizedBox(height: 10),
             _inputField("Password", passwordController, isPassword: true),
             const SizedBox(height: 30),
-            _loginBtn(), // Tombol Sign Up
+            _loginBtn(), 
             const SizedBox(height: 5),
             login(),
           ],

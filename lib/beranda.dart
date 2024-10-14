@@ -15,41 +15,41 @@ class Beranda extends StatelessWidget {
                 Navigator.pushNamed(context, '/anggota'); 
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.black, // Warna latar belakang tombol menjadi hitam
-                foregroundColor: Colors.white, // Warna teks tombol menjadi putih
+                backgroundColor: Colors.black, 
+                foregroundColor: Colors.white, 
               ),
               child: const Text('Daftar Anggota'),
             ),
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                // Aksi untuk Aplikasi Stopwatch
+                
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.black, // Warna latar belakang tombol menjadi hitam
-                foregroundColor: Colors.white, // Warna teks tombol menjadi putih
+                backgroundColor: Colors.black, 
+                foregroundColor: Colors.white, 
               ),
               child: const Text('Aplikasi Stopwatch'),
             ),
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                // Aksi untuk Daftar Situs Rekomendasi
+                
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.black, // Warna latar belakang tombol menjadi hitam
-                foregroundColor: Colors.white, // Warna teks tombol menjadi putih
+                backgroundColor: Colors.black, 
+                foregroundColor: Colors.white, 
               ),
               child: const Text('Daftar Situs Rekomendasi'),
             ),
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                // Aksi untuk Favorite
+                
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.black, // Warna latar belakang tombol menjadi hitam
-                foregroundColor: Colors.white, // Warna teks tombol menjadi putih
+                backgroundColor: Colors.black, 
+                foregroundColor: Colors.white, 
               ),
               child: const Text('Favorite'),
             ),
@@ -67,7 +67,7 @@ class Beranda extends StatelessWidget {
             label: 'Bantuan',
           ),
         ],
-        currentIndex: 0, // Indeks saat ini
+        currentIndex: 0, 
         onTap: (index) {
           if (index == 1) {
             Navigator.of(context).pushReplacementNamed('/bantuan');

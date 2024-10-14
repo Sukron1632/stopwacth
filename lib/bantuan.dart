@@ -50,7 +50,7 @@ class Bantuan extends StatelessWidget {
             label: 'Bantuan',
           ),
         ],
-        currentIndex: 1, // Indeks saat ini
+        currentIndex: 1, 
         onTap: (index) {
           if (index == 0) {
             Navigator.of(context).pushReplacementNamed('/beranda');

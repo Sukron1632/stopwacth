@@ -113,7 +113,7 @@ class Anggota extends StatelessWidget {
             label: 'Bantuan',
           ),
         ],
-        currentIndex: 0, // Indeks saat ini
+        currentIndex: 0, 
         onTap: (index) {
           if (index == 0) {
             Navigator.of(context).pushReplacementNamed('/beranda');

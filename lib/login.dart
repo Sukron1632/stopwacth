@@ -18,25 +18,21 @@ class _LoginState extends State<Login> {
     String password = passwordController.text;
 
     try {
-      // Sign in with Firebase
       UserCredential userCredential = await _auth.signInWithEmailAndPassword(
         email: email,
         password: password,
       );
       
-      // Navigate to 'beranda' on successful login
       Navigator.pushReplacementNamed(context, '/beranda');
     } on FirebaseAuthException catch (e) {
       String message = 'Login Failed';
 
-      // Display error messages based on FirebaseAuthException
       if (e.code == 'user-not-found') {
         message = 'User not found';
       } else if (e.code == 'wrong-password') {
         message = 'Wrong password';
       }
 
-      // Show error snackbar
       SnackBar snackBar = SnackBar(
         content: Text(
           message,
